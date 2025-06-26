@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Website Builder</title>
+    <style>
+        .container{
+           width: 1000px;
+            margin: 50px;
+           
+        }
+        .card{
+            display: flex;
+            justify-content: center;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            border-radius: 10px;
+            color: whitesmoke;
+            background-color: rgb(15, 3, 3);
+            margin: 10px;
+        }
+        img{
+            height: 120px;
+            padding: 10px;
+        }
+        .image{
+            position: relative;
+        }
+        .image img{
+            display: flex;
+            align-items: center;
+            border-radius: 17px ;
+            width: 250px;
+            position: relative;
+        }
+        .image .capsule{
+            border: 2px solid black;
+            height: 20px;
+            width: 40px;
+            position: absolute;
+            z-index: 10;
+            bottom: 8px;
+            right: 10px;
+            background-color: rgb(255, 255, 255);
+            color: black;
+            border-radius: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="Youtube Image.png" alt="">
+                <div class="capsule">13:09</div>
+                
+            </div>
+            <div class="text">
+                <h1>Introduction to JavaScript |Frontend  video #2</h1>
+                <p>DevGnan . 727k views . 2 months ago</p>
+                </div>
+            
+        </div>
+        
+    </div>
+    <script src="YoutubeCard.js"></script>
+</body>
+</html>
